@@ -21,7 +21,7 @@ const GitHubProfile = () => {
     return (
       <div className="container mx-auto py-8">
         <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
-        <h1 className="text-black text-center py-2">GitHub Profile Viewer</h1>
+        <h1 className="text-black text-center py-2">GitHub Profile Viewers</h1>
 
           <input
             className="w-full mb-4 px-4 py-2 rounded border border-gray-300"
