@@ -12,7 +12,7 @@ const GitHubProfile = () => {
     getUserProfile({ variables: { username } });
   };
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Loading...</p>;  
   if (error) return <p>Error :(</p>;
 
   if (data && data.user) {
