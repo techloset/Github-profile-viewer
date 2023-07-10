@@ -1,5 +1,4 @@
 import GitHubProfile from "./components/GitHubProfile";
-import World from "./components/World";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
