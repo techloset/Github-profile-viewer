@@ -6,10 +6,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <GitHubProfile/>,
   },
-  {
-    path: "/World",
-    element: <World/>,
-  },
+ 
 ]);
 
 export default function App() {
