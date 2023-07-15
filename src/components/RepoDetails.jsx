@@ -54,7 +54,7 @@ const RepoDetails = () => {
           {repository.branches?.nodes?.map((branch) => (
             <div key={branch.name} className="bg-white rounded p-4 mb-4">
               <p className="mb-2">Branch Name: {branch.name}</p>
-              <p className="mb-2">Commit Count: {branch.target.history.totalCount}</p>
+              <p className="mb-2">Commit Count: {branch.target.history.totalCount || 'nothing commit on repo'}</p>
             </div>
           ))}
         </div>
