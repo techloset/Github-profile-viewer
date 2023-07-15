@@ -1,23 +1,18 @@
 import React, { useState } from "react";
 import { GET_USER_PROFILE } from "./schema";
 import { useLazyQuery } from "@apollo/client";
-// import { setUserName } from "../store/githubUserSlice";
-// import { useDispatch } from "react-redux";
 import Loader from "./Loader";
 import ProfileListDetails from "./ProfileListDetails";
 const GitHubProfile = () => {
   const [username, setUsername] = useState("");
   const [getUserProfile, { loading, error, data }] =
     useLazyQuery(GET_USER_PROFILE);
-  // const dispatch = useDispatch();
   const handleSearch = () => {
     if(!username){
       alert("enter an userName")
     }
     getUserProfile({variables:{username}})
-    // dispatch(setUserName(getUserProfile({ variables: { username } })));
   };
-  // console.log(loading);
 
   return (
     <>
